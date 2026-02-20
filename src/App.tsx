@@ -11,8 +11,8 @@ const DatasetUpdate = lazy(() => import('./pages/DatasetUpdate/DatasetUpdate').t
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>     
+       <Routes>
           <Route element={<Layout />}>
             <Route
               index
