@@ -9,8 +9,7 @@ export function Layout() {
         <nav className={styles.nav}>
           <div className={styles.navLeft}>
             <Link to={ROUTES.HOME} className={styles.logo}>
-              <img src="/mio.png" alt="MIO Body Sprut" className={styles.logoImg} />
-              <span className={styles.logoText}>
+              <img src={`${import.meta.env.BASE_URL}mio.png`} alt="MIO Body Sprut" className={styles.logoImg} />              <span className={styles.logoText}>
                 <span className={styles.logoMio}>MIO</span>
                 <span className={styles.logoBottom}>
                   <svg className={styles.logoPulse} viewBox="0 0 40 14" aria-hidden>
